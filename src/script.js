@@ -64,6 +64,11 @@ const skills = [
     name: "Figma",
     url: "./img/skills/Figma.png",
   },
+  {
+    id: 13,
+    name: "Typescript",
+    url: "./img/skills/Typescript.png",
+  },
 ];
 
 let elementSkills = document.querySelector("#skills .skills");
@@ -97,16 +102,20 @@ const dataPortfolios = [
         img: "lelang-online.jpg"
     },
     {
-        name: "Aplikasi Referance Universitas PGRI Wiranegara",
+        name: "Aplikasi Referance Online",
         img: "referance-app.jpg"
     },
     {
-        name: "Web Company Profile Schoot (School Technology)",
+        name: "Landing Page Schoot",
         img: "schoot.jpg"
     },
     {
-        name: "Web Company Profile Service Expert",
+        name: "Landing Page VISX",
         img: "visx.jpg"
+    },
+    {
+        name: "Landing Page Qwords",
+        img: "qwords.png"
     },
 ];
 
@@ -121,7 +130,7 @@ dataPortfolios.forEach((portfolio) => {
                     <img
                         src="./img/portofolio/${portfolio.img}"
                         alt="${portfolio.name}"
-                        class="w-full"
+                        class="w-full h-[280px] object-cover"
                     />
                 </div>
                 <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
